@@ -1,0 +1,206 @@
+:root{
+    --SoftCyan: hsl(174, 77%, 80%);
+    --StrongCyan: hsl(174, 86%, 45%);
+    --LightGrayish: hsl(14, 92%, 95%);
+    --LightRed: hsl(15, 100%, 70%);
+    --PaleBlue: hsl(226, 100%, 87%);
+    --White: hsl(0, 0%, 100%);
+    --VeryPaleBlue: hsl(230, 100%, 99%);
+    --LightGrayishBlue: hsl(224, 65%, 95%);
+    --LightGrayishBlue2: hsl(223, 50%, 87%);
+    --GrayishBlue: hsl(225, 20%, 60%);
+    --DarkDesaturatedBlue: hsl(227, 35%, 25%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+html{
+    font-size: 15px;
+    font-family: "manrope";
+    color: var(--GrayishBlue);
+    font-weight: 500;
+}
+
+body{
+    text-align: center;
+    height: 100vh;
+    background-color: var(--VeryPaleBlue);
+}
+
+.background_container{
+    background-color: var(--ligh);
+    height: 50%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 0 0 0 15rem;
+}
+
+section{
+    background-color: var(--White);
+    border-radius: 1rem;
+}
+
+section > div{
+    padding: 2rem;
+}
+
+.range_container{
+    border-bottom: 1px solid var(--LightGrayishBlue);
+}
+
+header, main{
+    max-width: 450px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+header{
+    padding: 5rem 0;
+    background: url(images/pattern-circles.svg) no-repeat;
+    background-position: center;
+}
+
+
+h1{
+    font-size: 1.5rem;
+    color: var(--DarkDesaturatedBlue);
+    margin: 1rem 0;
+}
+
+h2{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header p{
+    width: 50%;
+    margin: auto;
+    line-height: 1.5rem;
+}
+
+#billing_input{
+    display: none;
+}
+
+.billing_checkbox{
+    width: 40px;
+    height: 21px;
+    display: flex;
+    border-radius: 10rem;
+    margin: 0 1rem;
+    background-color: var(--LightGrayishBlue2);
+    padding: 3px 4px;
+    scale: 1.1;
+}
+
+.checkbox_circle{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    border-radius: 10rem;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.billing_label{
+    width: fit-content;
+}
+
+.billing_container{
+    display: flex;
+    margin: 3rem 0 1rem;
+}
+
+.billing_container p {
+    font-size: 0.9rem;
+}
+
+.monthly_text{
+    text-align: right;
+}
+
+.yearly_text{
+    text-align: left;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+li::before{
+    content: "✓" ;
+    color: var(--StrongCyan);
+    margin-right: 1rem;
+}
+
+ul li:nth-child(2){
+    margin: 0.5rem 0;
+}
+
+#range_input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    border-radius: 999px;
+    margin: 2rem 0;
+}
+
+#range_input::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 9999px;
+    width: 40px; 
+    height: 40px;
+    background: url(images/icon-slider.svg) no-repeat center, var(--StrongCyan);
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0.5rem hsla(174, 86%, 45%, 0.3);
+  }
+
+#range_input::-moz-range-thumb{
+    border-radius: 9999px;
+    width: 40px; 
+    height: 40px;
+    background: url(images/icon-slider.svg) no-repeat center, var(--StrongCyan);
+    cursor: pointer;
+}
+
+
+.price{
+    color: var(--DarkDesaturatedBlue);
+    font-size: 2.4rem;
+    font-weight: 900;
+    vertical-align: middle;
+}
+
+.yearly_billing_reduction{
+    color: var(--LightRed);
+    background-color: var(--LightGrayish);
+    border-radius: 999px;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+button{
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    width: fit-content;
+    border-radius: 9999px;
+    border: none;
+    color: var(--LightGrayishBlue2);
+    background-color: var(--DarkDesaturatedBlue);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: "manrope";
+}

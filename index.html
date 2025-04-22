@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <div class="background_container"></div>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <main>
+    <section>
+      <div class="range_container">
+        <h2><span class="pageview_range"></span></h2>
+        <input min="0" max="4" type="range" name="range_input" id="range_input">
+        <label class="range_input_label" for="range_input"><span class="price"></span>/ month</label>
+        <div class="billing_container">
+          <p class="monthly_text">Monthly Billing</p>
+          <label class="billing_label" for="billing_input">
+            <input type="checkbox" name="billing_input" id="billing_input">
+            <span class="billing_checkbox"><span class="checkbox_circle"></span></span>
+          </label>        
+          <p class="yearly_text">Yearly Billing <span class="yearly_billing_reduction">-25%</span></p>
+        </div>
+      </div>
+      <div class="button_container">
+        <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+      <button class="trail_button">Start my trial</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
