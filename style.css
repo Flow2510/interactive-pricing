@@ -205,6 +205,10 @@ button{
     font-family: "manrope";
 }
 
+button:hover{
+    scale: 1.05;
+}
+
 @media screen and (min-width:1000px) {
     header, main{
         max-width: 600px;
